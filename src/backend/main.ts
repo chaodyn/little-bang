@@ -7,10 +7,10 @@ function createWindow() {
         width: 800,
         height: 600,
         backgroundColor: '#ffffff',
-        icon: __dirname + '/assets/icons/logo-96x96.png',
+        icon: __dirname + '/dist/frontend/assets/logo-96x96.png',
     });
 
-    win.loadURL('file://' + __dirname + '/dist/index.html');
+    win.loadURL('file://' + __dirname + '/../../dist/frontend/index.html');
 
     win.webContents.openDevTools()
     win.on('closed', function () {

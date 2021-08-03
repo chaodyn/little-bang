@@ -3,7 +3,7 @@
   "description": "Create project templates, folder structures, actions, initial files and settings for your projects.",
   "version": "1.0.0",
   "license": "GPL-3.0",
-  "main": "main.js",
+  "main": "src/backend/main.ts",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
