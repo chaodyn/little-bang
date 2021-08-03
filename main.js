@@ -7,7 +7,7 @@ function createWindow() {
         width: 800,
         height: 600,
         backgroundColor: '#ffffff',
-        icon: __dirname + '/dist/assets/logo-96x96.png',
+        icon: __dirname + '/assets/icons/logo-96x96.png',
     });
 
     win.loadURL('file://' + __dirname + '/dist/index.html');
