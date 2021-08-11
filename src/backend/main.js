@@ -1,6 +1,7 @@
-const { app, BrowserWindow } = require('electron');
+const electron = require('electron');
+const {app, BrowserWindow, ipcMain, dialog, shell} = electron;
 
-let win;
+let win = null;
 
 function createWindow() {
     win = new BrowserWindow({
@@ -12,7 +13,7 @@ function createWindow() {
 
     win.loadURL('file://' + __dirname + '/../../dist/frontend/index.html');
 
-    win.webContents.openDevTools()
+    win.webContents.openDevTools();
     win.on('closed', function () {
         win = null;
     });
